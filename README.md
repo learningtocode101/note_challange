@@ -1,11 +1,11 @@
-#note_book challenge
+# note_book challenge
 
 ## Purpose 
 To implement below notebook user stories using domain modelling-driven approach
 
 ## User stories
 ```
- As an office worker
+As an office worker
 So I can record useful information
 I want to be able to create a text note
 ```
