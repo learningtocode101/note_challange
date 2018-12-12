@@ -1,14 +1,16 @@
 class Note
-attr_reader :title, :text, :notes
+attr_reader :tag, :text, :note, :notes
 
-def initialize(title, text)
-  @title = title
-  @text = text
+DEFAULT_TAG = 'Untagged'
+
+def initialize
   @note = {}
+  @notes = []
 end
 
-def create_note(title, text)
-  @note = {title => text}
+def create_note(tag=DEFAULT_TAG, text)
+  @note = {:tag => tag, :text => text}
+  @notes << @note
 end
 
 end
