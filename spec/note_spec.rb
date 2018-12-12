@@ -10,8 +10,7 @@ describe Note do
    end
 
    it "creates a note" do
-     sample_note = note.create_note('Countries to visit')
-     expect(sample_note).to eq [tag => "Untagged", text => "Countries to visit"]
+     expect(note.create_note('Countries to visit')).to eq [tag => "Untagged", text => "Countries to visit"]
    end
 
 end
